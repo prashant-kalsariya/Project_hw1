@@ -43,10 +43,28 @@ session_start();
     <table>
         <tr>
             <th>Item name</th>
-            <td></td>
+            <td><?php echo $_SESSION['name'] ?></td>
         </tr>
-        
+        <tr>
+            <th>Item price</th>
+            <td><?php echo $_SESSION['price'] ?></td>
+        </tr>
+        <tr>
+            <th>Item disscount</th>
+            <td><?php echo $_SESSION['disscount'] ?></td>
+        </tr>
+        <tr>
+            <th>Item getby</th>
+            <td><?php echo $_SESSION['getby'] ?></td>
+        </tr>
+
     </table>
+    <!-- 
+        $_SESSION['name'] = $_POST['name'];
+$_SESSION['price'] = $_POST['price'];
+$_SESSION['disscount'] = $_POST['disscount'];
+$_SESSION['getby'] = $_POST['getby'];
+     -->
 
 </body>
 

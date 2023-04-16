@@ -64,6 +64,9 @@ session_start();
                     <!-- <button>Add to cart</button> -->
                     <form action="process.php" method="post">
                         <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
                         <!-- <input type="number" name="price" id="price" value="2000"> -->
                         <input type="submit" value="Add to cart" name="submit">
                     </form>

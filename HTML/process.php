@@ -5,7 +5,13 @@ if (isset($_POST['submit'])) {
     include 'C:\xampp\htdocs\Project_practies\PHP\connection.php';
     $price = mysqli_real_escape_string($con, $_POST['price']);
     $insert_query = "insert into practice (price) values ('$price')";
+    $_SESSION['name'] = $_POST['name'];
     $_SESSION['price'] = $_POST['price'];
+    $_SESSION['disscount'] = $_POST['disscount'];
+    $_SESSION['getby'] = $_POST['getby'];
+    // $_SESSION['price'] = $_POST['price'];
+
+
 
     $query = mysqli_query($con, $insert_query);
     if ($query) {
