@@ -5,7 +5,7 @@ session_start();
 ?>
 
 <?php
-
+// This is now new changes for this file
 // if($_SERVER['method'] == 'POST'){
 if (isset($_POST['submit'])) {
     include 'C:\xampp\htdocs\Project_practies\PHP\connection.php';
