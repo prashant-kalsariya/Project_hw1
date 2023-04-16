@@ -5,23 +5,19 @@ session_start();
 ?>
 
 <?php
-// This is now new changes for this file
-// if($_SERVER['method'] == 'POST'){
 if (isset($_POST['submit'])) {
     include 'C:\xampp\htdocs\Project_practies\PHP\connection.php';
     $price = mysqli_real_escape_string($con, $_POST['price']);
     $insert_query = "insert into practice (price) values ('$price')";
-    $_SESSION['name'] = $_POST['name'];
-    $_SESSION['price'] = $_POST['price'];
-    $_SESSION['disscount'] = $_POST['disscount'];
-    $_SESSION['getby'] = $_POST['getby'];
-    // $_SESSION['price'] = $_POST['price'];
-
-
-
+    $price = mysqli_real_escape_string($con, $_POST['price']);
+    $name = mysqli_real_escape_string($con, $_POST['name']);
+    $disscount = mysqli_real_escape_string($con, $_POST['disscount']);
+    $getby = mysqli_real_escape_string($con, $_POST['getby']);
+    $insert_query = "insert into practice2 (price,name,disscount,getby) values ('$price','$name','$disscount','$getby')";
     $query = mysqli_query($con, $insert_query);
     if ($query) {
-        $select_query = "select * from practice where price='$price'";
+        $select_query = "select * from practice2 where name='$name'";
+
         $query2 = mysqli_query($con, $select_query);
         $arrdata = mysqli_fetch_array($query2);
         $_SESSION['price'] = $arrdata['price'];

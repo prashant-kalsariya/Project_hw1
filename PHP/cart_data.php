@@ -35,7 +35,7 @@ session_start();
         if (isset($_POST['submit'])) {
             include 'C:\xampp\htdocs\Project_practies\PHP\connection.php';
             $ids = $_POST['search'];
-            $select_query = "select * from practice where id='$ids'";
+            $select_query = "select * from practice2 where id='$ids'";
             $result = mysqli_query($con, $select_query);
             if (mysqli_num_rows($result) > 0) {
                 $arr = mysqli_fetch_assoc($result);
@@ -52,19 +52,19 @@ session_start();
             <table>
                 <tr>
                     <th>Item name</th>
-                    <td><?php echo $_SESSION['name'] ?></td>
+                    <td><?php echo $arr['name'] ?></td>
                 </tr>
                 <tr>
                     <th>Item price</th>
-                    <td><?php echo $_SESSION['price'] ?></td>
+                    <td><?php echo $arr['price'] ?></td>
                 </tr>
                 <tr>
                     <th>Item disscount</th>
-                    <td><?php echo $_SESSION['disscount'] ?></td>
+                    <td><?php echo $arr['disscount'] ?></td>
                 </tr>
                 <tr>
                     <th>Item getby</th>
-                    <td><?php echo $_SESSION['getby'] ?></td>
+                    <td><?php echo $arr['getby'] ?></td>
                 </tr>
 
             </table>
