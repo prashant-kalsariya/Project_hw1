@@ -6,7 +6,7 @@ session_start();
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,8 +68,10 @@ session_start();
                 </tr>
 
             </table>
+            <a href="remove_cart.php?id=<?php echo $arr['id']; ?>">Delete</a>
+
         <?php
-        }else if(empty($_POST['search']) && isset($_POST['submit'])){
+        } else if (empty($_POST['search']) && isset($_POST['submit'])) {
             echo "Someting went wrong";
         }
         ?>
@@ -80,7 +82,7 @@ $_SESSION['price'] = $_POST['price'];
 $_SESSION['disscount'] = $_POST['disscount'];
 $_SESSION['getby'] = $_POST['getby'];
      -->
-<a href="/Project_practies/HTML/index.html">Home</a>
+    <a href="/Project_practies/HTML/index.html">Home</a>
 </body>
 
 </html>
