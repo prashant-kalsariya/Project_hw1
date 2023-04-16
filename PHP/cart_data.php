@@ -80,7 +80,7 @@ $_SESSION['price'] = $_POST['price'];
 $_SESSION['disscount'] = $_POST['disscount'];
 $_SESSION['getby'] = $_POST['getby'];
      -->
-<a href="/Project_practies/HTML/index.php">Home</a>
+<a href="/Project_practies/HTML/index.html">Home</a>
 </body>
 
 </html>
