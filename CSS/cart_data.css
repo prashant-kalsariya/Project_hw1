@@ -1,0 +1,19 @@
+table,
+tr,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.cart_info th {
+    text-align: left;
+    background-color: rgb(178, 177, 177);
+
+}
+
+.cart_info td{
+    background-color: rgb(208, 207, 207);
+
+}
+

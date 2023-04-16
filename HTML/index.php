@@ -67,6 +67,7 @@ session_start();
                         <input type="hidden" name="name" value="iphone 13 pro max">
                         <input type="hidden" name="disscount" value="50%">
                         <input type="hidden" name="getby" value="today">
+
                         <!-- <input type="number" name="price" id="price" value="2000"> -->
                         <input type="submit" value="Add to cart" name="submit">
                     </form>
@@ -84,6 +85,28 @@ session_start();
                     <!-- <button>Add to cart</button> -->
                     <form action="process.php" method="post">
                         <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
+                        <!-- <input type="number" name="price" id="price" value="2000"> -->
+                        <input type="submit" value="Add to cart" name="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <a href="black">
+                        <img src="https://m.media-amazon.com/images/I/61Dw5Z8LzJL._SL1000_.jpg" alt="Image">
+                    </a>
+                </div>
+                <div class="down">
+                    <p>Mywebsite's mega offer | Lenova Ideapad slim 3 | Mywebsite's choice | 7G | India's number 1 brand</p>
+                    <!-- <button>Add to cart</button> -->
+                    <form action="process.php" method="post">
+                        <input type="hidden" name="price" value="50000">
+                        <input type="hidden" name="name" value="Lenova ideapad slim 3">
+                        <input type="hidden" name="disscount" value="33%">
+                        <input type="hidden" name="getby" value="tomorrow">
                         <!-- <input type="number" name="price" id="price" value="2000"> -->
                         <input type="submit" value="Add to cart" name="submit">
                     </form>
@@ -100,6 +123,9 @@ session_start();
                     <!-- <button>Add to cart</button> -->
                     <form action="process.php" method="post">
                         <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
                         <!-- <input type="number" name="price" id="price" value="2000"> -->
                         <input type="submit" value="Add to cart" name="submit">
                     </form>
@@ -116,6 +142,9 @@ session_start();
                     <!-- <button>Add to cart</button> -->
                     <form action="process.php" method="post">
                         <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
                         <!-- <input type="number" name="price" id="price" value="2000"> -->
                         <input type="submit" value="Add to cart" name="submit">
                     </form>
@@ -132,6 +161,9 @@ session_start();
                     <!-- <button>Add to cart</button> -->
                     <form action="process.php" method="post">
                         <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
                         <!-- <input type="number" name="price" id="price" value="2000"> -->
                         <input type="submit" value="Add to cart" name="submit">
                     </form>
@@ -148,11 +180,110 @@ session_start();
                     <!-- <button>Add to cart</button> -->
                     <form action="process.php" method="post">
                         <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
                         <!-- <input type="number" name="price" id="price" value="2000"> -->
                         <input type="submit" value="Add to cart" name="submit">
                     </form>
                 </div>
             </div>
+            <div class="box">
+                <div class="top">
+                    <a href="black">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-g990elviinu/gallery/in-galaxy-s21-fe-g990-sm-g990elviinu-thumb-530606545?imwidth=480" alt="Image">
+                    </a>
+                </div>
+                <div class="down">
+                    <p>Mywebsite's mega offer for phone | 6G and all new features | trend for todays</p>
+                    <!-- <button>Add to cart</button> -->
+                    <form action="process.php" method="post">
+                        <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
+                        <!-- <input type="number" name="price" id="price" value="2000"> -->
+                        <input type="submit" value="Add to cart" name="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <a href="black">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-g990elviinu/gallery/in-galaxy-s21-fe-g990-sm-g990elviinu-thumb-530606545?imwidth=480" alt="Image">
+                    </a>
+                </div>
+                <div class="down">
+                    <p>Mywebsite's mega offer for phone | 6G and all new features | trend for todays</p>
+                    <!-- <button>Add to cart</button> -->
+                    <form action="process.php" method="post">
+                        <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
+                        <!-- <input type="number" name="price" id="price" value="2000"> -->
+                        <input type="submit" value="Add to cart" name="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <a href="black">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-g990elviinu/gallery/in-galaxy-s21-fe-g990-sm-g990elviinu-thumb-530606545?imwidth=480" alt="Image">
+                    </a>
+                </div>
+                <div class="down">
+                    <p>Mywebsite's mega offer for phone | 6G and all new features | trend for todays</p>
+                    <!-- <button>Add to cart</button> -->
+                    <form action="process.php" method="post">
+                        <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
+                        <!-- <input type="number" name="price" id="price" value="2000"> -->
+                        <input type="submit" value="Add to cart" name="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <a href="black">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-g990elviinu/gallery/in-galaxy-s21-fe-g990-sm-g990elviinu-thumb-530606545?imwidth=480" alt="Image">
+                    </a>
+                </div>
+                <div class="down">
+                    <p>Mywebsite's mega offer for phone | 6G and all new features | trend for todays</p>
+                    <!-- <button>Add to cart</button> -->
+                    <form action="process.php" method="post">
+                        <input type="hidden" name="price" value="2000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
+                        <!-- <input type="number" name="price" id="price" value="2000"> -->
+                        <input type="submit" value="Add to cart" name="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <a href="black">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-g990elviinu/gallery/in-galaxy-s21-fe-g990-sm-g990elviinu-thumb-530606545?imwidth=480" alt="Image">
+                    </a>
+                </div>
+                <div class="down">
+                    <p>Mywebsite's mega offer for phone | 6G and all new features | trend for todays</p>
+                    <!-- <button>Add to cart</button> -->
+                    <form action="process.php" method="post">
+                        <input type="hidden" name="price" value="3000">
+                        <input type="hidden" name="name" value="iphone 13 pro max">
+                        <input type="hidden" name="disscount" value="50%">
+                        <input type="hidden" name="getby" value="today">
+                        <!-- <input type="number" name="price" id="price" value="2000"> -->
+                        <input type="submit" value="Add to cart" name="submit">
+                    </form>
+                </div>
+            </div>
+
         </div>
     </main>
 </body>
