@@ -47,7 +47,7 @@ session_start();
     </h1>
     <div class="cart_info">
         <?php
-        if (isset($_POST['submit']) && !empty($_POST['search'])) {
+        if (isset($_POST['submit']) && !empty($_POST['search']) && !empty($arr['name'])) {
         ?>
             <table>
                 <tr>
@@ -73,6 +73,12 @@ session_start();
         <?php
         } else if (empty($_POST['search']) && isset($_POST['submit'])) {
             echo "Someting went wrong";
+        }else{
+            ?>
+            <script>
+                alert('Please Enter valid ID, ID is not exists');
+            </script>
+            <?php
         }
         ?>
     </div>
