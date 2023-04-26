@@ -20,75 +20,83 @@ session_start();
 
 <body>
 
+    <div class="container">
 
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+            <input type="text" name="search" id="search" placeholder="Write your ID here">
+            <input type="submit" value="Search" name="submit">
+        </form>
 
-        <input type="text" name="search" id="search" placeholder="Write your ID here">
-        <input type="submit" value="Search" name="submit">
-    </form>
+        <h1>
 
-    <h1>
-
-        <?php
-
-        if (isset($_POST['submit'])) {
-            include 'C:\xampp\htdocs\Project_practies\PHP\connection.php';
-            $ids = $_POST['search'];
-            $select_query = "select * from practice2 where id='$ids'";
-            $result = mysqli_query($con, $select_query);
-            if (mysqli_num_rows($result) > 0) {
-                $arr = mysqli_fetch_assoc($result);
-                // echo "your records are " . $arr['price'];
-            }
-        }
-
-        ?>
-    </h1>
-    <div class="cart_info">
-        <?php
-        if (isset($_POST['submit']) && !empty($_POST['search']) && !empty($arr['name'])) {
-        ?>
-            <table>
-                <tr>
-                    <th>Item name</th>
-                    <td><?php echo $arr['name'] ?></td>
-                </tr>
-                <tr>
-                    <th>Item price</th>
-                    <td><?php echo $arr['price'] ?></td>
-                </tr>
-                <tr>
-                    <th>Item disscount</th>
-                    <td><?php echo $arr['disscount'] ?></td>
-                </tr>
-                <tr>
-                    <th>Item getby</th>
-                    <td><?php echo $arr['getby'] ?></td>
-                </tr>
-
-            </table>
-            <a href="remove_cart.php?id=<?php echo $arr['id']; ?>">Delete</a>
-
-        <?php
-        } else if (empty($_POST['search']) && isset($_POST['submit'])) {
-            echo "Someting went wrong";
-        }else{
-            ?>
-            <script>
-                alert('Please Enter valid ID, ID is not exists');
-            </script>
             <?php
-        }
-        ?>
-    </div>
-    <!-- 
+
+            if (isset($_POST['submit'])) {
+                include 'C:\xampp\htdocs\Project_practies\PHP\connection.php';
+                $ids = $_POST['search'];
+                $select_query = "select * from practice2 where id='$ids'";
+                $result = mysqli_query($con, $select_query);
+                if (mysqli_num_rows($result) > 0) {
+                    $arr = mysqli_fetch_assoc($result);
+                    // echo "your records are " . $arr['price'];
+                }
+            }
+
+            ?>
+        </h1>
+        <div class="cart_info">
+            <?php
+            if (isset($_POST['submit']) && !empty($_POST['search']) && !empty($arr['name'])) {
+            ?>
+                <table>
+                    <tr>
+                        <td colspan="2" id="image">
+                            <img src="https://manzanasymas.com/wp-content/uploads/2022/01/iphone-13-pro-max-plata-01.jpg" alt="My_image">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>Item name</th>
+                        <td><?php echo $arr['name'] ?></td>
+                    </tr>
+                    <tr>
+                        <th>Item price</th>
+                        <td><?php echo $arr['price'] ?></td>
+                    </tr>
+                    <tr>
+                        <th>Item disscount</th>
+                        <td><?php echo $arr['disscount'] ?></td>
+                    </tr>
+                    <tr>
+                        <th>Item getby</th>
+                        <td><?php echo $arr['getby'] ?></td>
+                    </tr>
+
+                </table>
+                <a href="remove_cart.php?id=<?php echo $arr['id']; ?>">Delete</a>
+            <?php
+            } else if (empty($_POST['search']) && isset($_POST['submit'])) {
+                // echo "<h2>You have not enter your ID , Please enter your ID!</h2>";
+            ?>
+                <div class="danger">
+
+                    <h2>You have not enter your ID,Please enter your ID!</h2>
+                </div>
+
+            <?php
+            }
+            ?>
+
+        </div>
+        <!-- 
         $_SESSION['name'] = $_POST['name'];
 $_SESSION['price'] = $_POST['price'];
 $_SESSION['disscount'] = $_POST['disscount'];
 $_SESSION['getby'] = $_POST['getby'];
      -->
-    <a href="/Project_practies/HTML/index.html">Home</a>
+        <a href="/Project_practies/HTML/index.html">Home</a>
+    </div>
 </body>
 
 </html>

@@ -4,6 +4,7 @@ th,
 td {
     border: 1px solid white;
     border-collapse: collapse;
+    padding: 3px;
 }
 
 .cart_info th {
@@ -15,5 +16,22 @@ td {
 .cart_info td{
     background-color: rgb(208, 207, 207);
 
+}
+
+.danger h2{
+    color: red;
+}
+
+#image img{
+    height: 200px;
+    /* margin-left: 20px; */
+    /* border: 2px solid green; */
+    width: 100%;
+    
+}
+
+.container{
+    width: 20%;
+    margin: auto;
 }
 
