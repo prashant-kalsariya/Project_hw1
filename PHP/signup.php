@@ -13,7 +13,7 @@
 
 <body>
     <?php
-    include 'config.php';
+    include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
     if (isset($_POST['submit'])) {
         $name = mysqli_real_escape_string($con, $_POST['name']);
@@ -22,7 +22,7 @@
         $password = mysqli_real_escape_string($con, $_POST['password']);
         $cpassword = mysqli_real_escape_string($con, $_POST['cpassword']);
 
-        $email_query = "select * from user where email='$email'";
+        $email_query = "select * from signup where email='$email'";
         $equery = mysqli_query($con, $email_query);
         $erow = mysqli_num_rows($equery);
         if ($erow > 0) {
@@ -38,7 +38,7 @@
                 $cpass = password_hash($cpassword, PASSWORD_BCRYPT);
 
                 //Write query here
-                $insert_query = "insert into user(name,email,mobile,password,cpassword) value ('$name','$email','$mobile','$pass','$cpass')";
+                $insert_query = "insert into signup(name,email,mobile,password,cpassword) value ('$name','$email','$mobile','$pass','$cpass')";
                 $query = mysqli_query($con, $insert_query);
                 if ($query) {
             ?>
@@ -72,7 +72,7 @@
                 </header>
                 <div class="input_field">
                     <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                    <img src="name_logo.png" alt="image">
+                    <img src="\Project_practies\images\name_logo.png" alt="image">
                 </div>
                 <div class="input_field">
                     <input type="email" name="email" id="eamil" placeholder="Enter your email address" required>
