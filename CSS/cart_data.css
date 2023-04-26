@@ -24,8 +24,6 @@ td {
 
 #image img{
     height: 200px;
-    /* margin-left: 20px; */
-    /* border: 2px solid green; */
     width: 100%;
     
 }
@@ -35,3 +33,11 @@ td {
     margin: auto;
 }
 
+.button{
+     text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    color: red;
+}

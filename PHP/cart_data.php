@@ -72,9 +72,16 @@ session_start();
                         <th>Item getby</th>
                         <td><?php echo $arr['getby'] ?></td>
                     </tr>
+                    <tr>
+                        <td class="button">
+                            <a href="remove_cart.php?id=<?php echo $arr['id']; ?>">Delete</a>
+                        </td>
+                        <td class="button">
 
+                            <a href="/Project_practies/HTML/index.html">Home</a>
+                        </td>
+                    </tr>
                 </table>
-                <a href="remove_cart.php?id=<?php echo $arr['id']; ?>">Delete</a>
             <?php
             } else if (empty($_POST['search']) && isset($_POST['submit'])) {
                 // echo "<h2>You have not enter your ID , Please enter your ID!</h2>";
@@ -88,6 +95,7 @@ session_start();
             }
             ?>
 
+
         </div>
         <!-- 
         $_SESSION['name'] = $_POST['name'];
@@ -95,7 +103,6 @@ $_SESSION['price'] = $_POST['price'];
 $_SESSION['disscount'] = $_POST['disscount'];
 $_SESSION['getby'] = $_POST['getby'];
      -->
-        <a href="/Project_practies/HTML/index.html">Home</a>
     </div>
 </body>
 
