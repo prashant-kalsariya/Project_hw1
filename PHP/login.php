@@ -43,10 +43,10 @@ session_start();
             ?>
                 <script>
                     alert('Login successfully');
-                    // location.replace('\Project_practies\HTML\main_index.html');
+                    location.replace('\\Project_practies\\PHP\\main_index.php');
                 </script>
             <?php
-            header('location:\Project_practies\PHP\main_index.php');
+            // header('location:\Project_practies\PHP\main_index.php');
             } else {
             ?>
                 <script>

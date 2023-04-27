@@ -2,6 +2,7 @@
 session_start();
 
 $ids = $_SESSION['id'];
+$_SESSION[$ids]['cart-count']++;
 
 include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
@@ -10,12 +11,12 @@ $insert_query = "insert into cart(id,name) value($ids,'$name')";
 
 $result = mysqli_query($con, $insert_query);
 if($result){
-    ?>
+?>
     <script>
-        alert('add to cart successfully');
+        // alert('add to cart successfully');
+        // window.location = '\\Project_practies\\PHP\\main_index.php';
+        location.replace('\\Project_practies\\PHP\\main_index.php');
     </script>
-    
-    <?php
-    header('location:\Project_practies\PHP\main_index.php');
+<?php
 }
 ?>
