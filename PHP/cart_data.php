@@ -52,7 +52,7 @@ session_start();
                 <table>
                     <tr>
                         <td colspan="2" id="image">
-                            <img src="https://manzanasymas.com/wp-content/uploads/2022/01/iphone-13-pro-max-plata-01.jpg" alt="My_image">
+                            <img src="<?php echo $arr['photo']; ?>" alt="My_image">
                         </td>
 
                     </tr>

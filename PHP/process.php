@@ -11,6 +11,7 @@ if (isset($_POST['submit'])) {
     $name = mysqli_real_escape_string($con, $_POST['name']);
     $disscount = mysqli_real_escape_string($con, $_POST['disscount']);
     $getby = mysqli_real_escape_string($con, $_POST['getby']);
+    $photo = mysqli_real_escape_string($con, $_POST['photo']);
     $select_query = "select * from practice2 where name = '$name'";
     $squery = mysqli_query($con, $select_query);
     if (mysqli_num_rows($squery) > 0) {
@@ -21,7 +22,7 @@ if (isset($_POST['submit'])) {
         </script>
         <?php
     } else {
-        $insert_query = "insert into practice2 (price,name,disscount,getby) values ('$price','$name','$disscount','$getby')";
+        $insert_query = "insert into practice2 (price,name,disscount,getby,photo) values ('$price','$name','$disscount','$getby','$photo')";
         $query = mysqli_query($con, $insert_query);
         if ($query) {
             $select_query = "select * from practice2 where name='$name'";
