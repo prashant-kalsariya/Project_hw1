@@ -54,10 +54,14 @@
 <body>
     <?php
     session_start();
+    include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
+
     $id = $_SESSION['id'];
-    if (!isset($_SESSION[$id]['cart-count'])) {
-        $_SESSION[$id]['cart-count'] = 0;
-    }
+
+    $select_query = "select * from signup where id=$id";
+    $query = mysqli_query($con,$select_query);
+    $arr_data = mysqli_fetch_assoc($query);
+
     ?>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -102,7 +106,7 @@
                         <button type="button" class="btn btn-primary position-relative">
                             Cart
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                <?php $_SESSION[$id]['cart-count'];  ?>
+                                <?php echo $arr_data['count'];  ?>
                                 <span class="visually-hidden">unread messages</span>
                             </span>
                         </button>
