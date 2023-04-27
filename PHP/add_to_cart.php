@@ -26,7 +26,7 @@ $result = mysqli_query($con, $insert_query);
 if ($result) {
 ?>
     <script>
-        // alert('add to cart successfully');
+        alert('add to cart successfully');
         // window.location = '\\Project_practies\\PHP\\main_index.php';
         location.replace('\\Project_practies\\PHP\\main_index.php');
     </script>
