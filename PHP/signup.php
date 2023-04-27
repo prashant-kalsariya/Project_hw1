@@ -93,7 +93,7 @@
                 <div class="input_field">
                     <input type="submit" value="Sign Up" name="submit" id="submit">
                 </div>
-                <p style="text-align: center">Have an account?<a style="text-decoration: none;" href="login.php">Login Here</a></p>
+                <p style="text-align: center">Have an account?<a style="text-decoration: none;" href="\Project_practies\PHP\login.php">Login Here</a></p>
             </form>
         </div>
     </div>

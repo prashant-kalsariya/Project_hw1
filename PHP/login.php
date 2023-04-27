@@ -22,15 +22,8 @@ session_start();
 
     if (isset($_POST['submit'])) {
 
-        if (isset($_SESSION['name'])) {
-            // header('location:home.php');
-            // echo " <script>  location.replace('home.php'); </script>";
-    ?>
-            <script>
-                location.replace('home.php');
-            </script>
-            <?php
-        }
+     
+        
         $email = mysqli_escape_string($con, $_POST['email']);
         $password = mysqli_escape_string($con, $_POST['password']);
 
@@ -40,41 +33,20 @@ session_start();
 
 
         if ($erow) {
+         
             $email_array = mysqli_fetch_assoc($equery);
-            $pass = $email_array['password'];
-            $_SESSION['name'] = $email_array['name'];
-            $_SESSION['email'] = $email_array['email'];
-            $_SESSION['mobile'] = $email_array['mobile'];
             $_SESSION['id'] = $email_array['id'];
-
-
-            // $_SESSION['name']=$name;
-            // $_SESSION['age']=$age;
-            // $_SESSION['zender']=$zender;
-            // $_SESSION['school']=$school;
-            // $_SESSION['hobbie']=$hobbie;
-            // $_SESSION['university']=$university;
-            // $_SESSION['remark'] = $remark;
-
-            $_SESSION['age'] = $email_array['age'];
-            $_SESSION['zender'] = $email_array['zender'];
-            $_SESSION['school'] = $email_array['school'];
-            $_SESSION['hobbie'] = $email_array['hobbie'];
-            $_SESSION['university'] = $email_array['university'];
-            $_SESSION['remark'] = $email_array['remark'];
-            // $_SESSION['name'] = $email_array['name'];
-
-
+            $pass = $email_array['password'];
             $pass_varify = password_verify($password, $pass);
             if ($pass_varify) {
-                //Login succesfully
-                //Go to the home page
+               
             ?>
                 <script>
                     alert('Login successfully');
-                    location.replace('home.php');
+                    // location.replace('\Project_practies\HTML\main_index.html');
                 </script>
             <?php
+            header('location:\Project_practies\PHP\main_index.php');
             } else {
             ?>
                 <script>
@@ -86,7 +58,7 @@ session_start();
             ?>
             <script>
                 alert("Email address is not exists, Please sign up first");
-                location.replace('registration.php');
+                location.replace('\Project_practies\PHP\signup.php');
             </script>
     <?php
         }
@@ -116,7 +88,7 @@ session_start();
                 <div class="input_field">
                     <input type="submit" value="Login" name="submit" id="submit">
                 </div>
-                <p style="text-align: center">Not Have an account?<a style="text-decoration: none;" href="registration.php">Sign Up Here</a></p>
+                <p style="text-align: center">Not Have an account?<a style="text-decoration: none;" href="\Project_practies\PHP\signup.php">Sign Up Here</a></p>
             </form>
         </div>
     </div>

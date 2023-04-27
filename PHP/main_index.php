@@ -93,13 +93,6 @@
                     <form class="d-flex" id="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                        <!-- <button type="button" class="btn btn-primary position-relative">
-                    Cart
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      99+
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </button> -->
                     </form>
                     <form class="d-flex">
 
@@ -160,7 +153,8 @@
                             additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
-                        <form action="cart_process.php" method="post">
+                        <form action="\Project_practies\PHP\add_to_cart.php" method="post">
+                            <input type="hidden" name="name" value="HP 15-s">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
