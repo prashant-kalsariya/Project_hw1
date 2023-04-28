@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="\Project_practies\CSS\main_cart_data.css">
+    <!-- <link rel="stylesheet" href="\Project_practies\CSS\main_cart_data.css"> -->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Cart Data</title>
+
+    <style>
+        <?php
+        include 'C:\xampp\htdocs\Project_practies\CSS\main_cart_data.css';
+        ?>
+    </style>
 
 
 </head>
@@ -49,12 +55,12 @@
                         <td>quantity</td>
                         <td>
                             <a href="\Project_practies\minus.php?name=<?php echo $arr['name']
-                                                                                        ?>">
-                                <img src="\Project_practies\images\minus-logo.png" alt="Delte logo" title="Delete" height="30">
-                                
+                                                                        ?>">
+                                <img src="\Project_practies\images\minus-logo.png" alt="Delte logo" title="Decrease quantity" height="30">
+
                             </a> 1<a href="\Project_practies\PHP\plus.php?name=<?php echo $arr['name']
-                                                                                            ?>">
-                                <img src="\Project_practies\images\plus-logo.png" alt="Delte logo" title="Delete" height="30">
+                                                                                ?>">
+                                <img src="\Project_practies\images\plus-logo.png" alt="Delte logo" title="Increase quantity" height="30">
                             </a>
                         </td>
                     </tr>
@@ -67,12 +73,19 @@
                         <td><?php echo  $arr['disscount']; ?></td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td id="delete" colspan="2">
                             <a href="\Project_practies\PHP\main_remove_cart.php?name=<?php echo $arr['name']
                                                                                         ?>">
                                 <img src="\Project_practies\images\delete_logo.png" alt="Delte logo" title="Delete" height="30">
                             </a>
 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="button" colspan="2">
+                            <a href="#">
+                                <button>Buy</button>
+                            </a>
                         </td>
                     </tr>
 
