@@ -69,33 +69,42 @@
         </div>
         <!-- <h1>Hello, world!</h1> -->
         <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- <a href="#"> -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://cdn.wallpapersafari.com/79/45/iQw0qH.jpg" class="card-img-top" alt="...">
+
+                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 15-s">
+                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="disscount" value="22%">
+                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
                 </div>
             </div>
+            <!-- </a> -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://cdn.wallpapersafari.com/79/45/iQw0qH.jpg" class="card-img-top" alt="...">
+                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 16-s">
+                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="disscount" value="22%">
+                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -103,15 +112,18 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://cdn.wallpapersafari.com/79/45/iQw0qH.jpg" class="card-img-top" alt="...">
+                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 17-s">
+                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="disscount" value="22%">
+                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -119,15 +131,18 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://cdn.wallpapersafari.com/79/45/iQw0qH.jpg" class="card-img-top" alt="...">
+                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 18-s">
+                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="disscount" value="22%">
+                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -135,15 +150,18 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://cdn.wallpapersafari.com/79/45/iQw0qH.jpg" class="card-img-top" alt="...">
+                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 19-s">
+                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="disscount" value="22%">
+                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -151,15 +169,18 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://cdn.wallpapersafari.com/79/45/iQw0qH.jpg" class="card-img-top" alt="...">
+                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 20-s">
+                            <input type="hidden" name="name" value="HP 159-s">
+                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="disscount" value="22%">
+                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>

@@ -18,11 +18,6 @@ if ($squery) {
         $update_query = "update signup set count=$cnt where id=$id";
 
         $uquery = mysqli_query($con, $update_query);
-
-      
-
-
-
         if ($uquery) {
             $delete_query = "delete from cart where name='$name'";
             $query = mysqli_query($con, $delete_query);

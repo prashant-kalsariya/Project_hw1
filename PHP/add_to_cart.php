@@ -7,7 +7,7 @@ $ids = $_SESSION['id'];
 include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 $name = $_POST['name'];
 
-$s_query = "select * from cart where name ='$name' ";
+$s_query = "select * from cart where name ='$name' and id ='$ids'";
 $qu = mysqli_query($con, $s_query);
 if (!mysqli_num_rows($qu)) {
 
@@ -24,8 +24,11 @@ if (!mysqli_num_rows($qu)) {
     }
     $update_query = "update signup set count = $cnt where id = $ids";
     $query = mysqli_query($con, $update_query);
-    $name = $_POST['name'];
-    $insert_query = "insert into cart(id,name) value($ids,'$name')";
+    $price = mysqli_real_escape_string($con, $_POST['price']);
+    $name = mysqli_real_escape_string($con, $_POST['name']);
+    $disscount = mysqli_real_escape_string($con, $_POST['disscount']);
+    $photo = mysqli_real_escape_string($con, $_POST['photo']);
+    $insert_query = "insert into cart(id,name,price,disscount,photo) value($ids,'$name','$price','$disscount','$photo')";
 
     $result = mysqli_query($con, $insert_query);
     if ($result) {
