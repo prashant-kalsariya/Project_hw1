@@ -28,7 +28,7 @@
     while ($arr = mysqli_fetch_assoc($query)) {
         echo $arr['name'];
     ?>
-        <a href="\Project_practies\PHP\main_remove_cart.php?id=<?php  echo $arr['id']; ?>&name=<?php echo $arr['name'] ?>">
+        <a href="\Project_practies\PHP\main_remove_cart.php?name=<?php echo $arr['name'] ?>">
             <img src="\Project_practies\images\delete_logo.png" alt="Delte logo" height="30">
         </a>
     <?php

@@ -2,10 +2,11 @@
 session_start();
 include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
-$id = $_GET['id'];
+// $id = $_GET['id'];
+$id = $_SESSION['id'];
 $name = $_GET['name'];
 
-$select_query = "select * from signup where name='$name'";
+$select_query = "select * from signup where id='$id'";
 $squery = mysqli_query($con, $select_query);
 
 if ($squery) {
@@ -18,6 +19,10 @@ if ($squery) {
 
         $uquery = mysqli_query($con, $update_query);
 
+      
+
+
+
         if ($uquery) {
             $delete_query = "delete from cart where name='$name'";
             $query = mysqli_query($con, $delete_query);
@@ -28,9 +33,15 @@ if ($squery) {
                     alert('Delete successfully');
                     location.replace('\\Project_practies\\PHP\\main_cart_data.php');
                 </script>
-<?php
+            <?php
             } else {
-                echo "Error deleting record: " . mysqli_error($con);
+            ?>
+                <script>
+                    alert('Can not delte successfully');
+                    location.replace('\\Project_practies\\PHP\\main_cart_data.php');
+                </script>
+<?php
+                // echo "Error deleting record: " . mysqli_error($con);
             }
         } else {
             echo "Error updating record: " . mysqli_error($con);

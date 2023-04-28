@@ -95,7 +95,7 @@
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 15-s">
+                            <input type="hidden" name="name" value="HP 16-s">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 15-s">
+                            <input type="hidden" name="name" value="HP 17-s">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 15-s">
+                            <input type="hidden" name="name" value="HP 18-s">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -143,7 +143,7 @@
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 15-s">
+                            <input type="hidden" name="name" value="HP 19-s">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -159,7 +159,7 @@
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 15-s">
+                            <input type="hidden" name="name" value="HP 20-s">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
