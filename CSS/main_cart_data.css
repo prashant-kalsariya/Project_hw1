@@ -10,3 +10,17 @@ td {
     background-color: rgb(208, 207, 207);
 
 }
+
+.container {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cart_info {
+    margin-bottom: 5px;
+}
+
+td a{
+    text-decoration: none;
+}

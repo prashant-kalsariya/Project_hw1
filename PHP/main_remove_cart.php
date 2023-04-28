@@ -19,7 +19,7 @@ if ($squery) {
 
         $uquery = mysqli_query($con, $update_query);
         if ($uquery) {
-            $delete_query = "delete from cart where name='$name'";
+            $delete_query = "delete from cart where name='$name' and id='$id'";
             $query = mysqli_query($con, $delete_query);
 
             if ($query) {

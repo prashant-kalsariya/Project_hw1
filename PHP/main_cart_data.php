@@ -12,16 +12,7 @@
 
     <title>Cart Data</title>
 
-    <style>
-        .container {
-          /* display: flex; */
-          display: grid;
-          grid-template-columns: repeat(4,1fr);
-        }
-        .cart_info{
-            margin-bottom: 5px;
-        }
-    </style>
+
 </head>
 
 <body>
@@ -55,6 +46,19 @@
                         <td><?php echo  $arr['name']; ?></td>
                     </tr>
                     <tr>
+                        <td>quantity</td>
+                        <td>
+                            <a href="\Project_practies\minus.php?name=<?php echo $arr['name']
+                                                                                        ?>">
+                                <img src="\Project_practies\images\minus-logo.png" alt="Delte logo" title="Delete" height="30">
+                                
+                            </a> 1<a href="\Project_practies\PHP\plus.php?name=<?php echo $arr['name']
+                                                                                            ?>">
+                                <img src="\Project_practies\images\plus-logo.png" alt="Delte logo" title="Delete" height="30">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>price</td>
                         <td><?php echo  $arr['price']; ?></td>
                     </tr>
@@ -71,6 +75,7 @@
 
                         </td>
                     </tr>
+
                 </table>
             </div>
 
