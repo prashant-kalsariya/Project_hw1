@@ -29,10 +29,10 @@
 
     include 'C:\xampp\htdocs\Project_practies\PHP\navbar.php';
 
-    if($arr_data['count'] == 0){
-        ?>
-        <h2 id="no_cart" >No data found</h2>
-        <?php
+    if ($arr_data['count'] == 0) {
+    ?>
+        <h2 id="no_cart">No data found</h2>
+    <?php
     }
 
     $id = $_SESSION['id'];
@@ -60,19 +60,19 @@
                     <tr>
                         <td>quantity</td>
                         <td>
-                            <a href="\Project_practies\minus.php?name=<?php echo $arr['name']
-                                                                        ?>">
+                            <a href="\Project_practies\PHP\minus.php?name=<?php echo $arr['name']
+                                                                            ?>">
                                 <img src="\Project_practies\images\minus-logo.png" alt="Delte logo" title="Decrease quantity" height="30">
 
-                            </a> 1<a href="\Project_practies\PHP\plus.php?name=<?php echo $arr['name']
-                                                                                ?>">
+                            </a><?php echo $arr['quantity']; ?><a href="\Project_practies\PHP\plus.php?name=<?php echo $arr['name']
+                                                                                                            ?>">
                                 <img src="\Project_practies\images\plus-logo.png" alt="Delte logo" title="Increase quantity" height="30">
                             </a>
                         </td>
                     </tr>
                     <tr>
                         <td>price</td>
-                        <td><?php echo  $arr['price']; ?></td>
+                        <td><?php echo  '$' . $arr['price'] * $arr['quantity'];  ?></td>
                     </tr>
                     <tr>
                         <td>disscount</td>

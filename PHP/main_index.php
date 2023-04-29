@@ -94,7 +94,7 @@
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 15-s">
-                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="price" value="6500">
                             <input type="hidden" name="disscount" value="22%">
                             <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
@@ -114,7 +114,7 @@
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 16-s">
-                            <input type="hidden" name="price" value="$7,500">
+                            <input type="hidden" name="price" value="7500">
                             <input type="hidden" name="disscount" value="22%">
                             <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
@@ -133,7 +133,7 @@
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 17-s">
-                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="price" value="6500">
                             <input type="hidden" name="disscount" value="22%">
                             <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
@@ -152,7 +152,7 @@
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 18-s">
-                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="price" value="6500">
                             <input type="hidden" name="disscount" value="22%">
                             <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
@@ -171,7 +171,7 @@
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 19-s">
-                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="price" value="6500">
                             <input type="hidden" name="disscount" value="22%">
                             <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">
@@ -190,7 +190,7 @@
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
                             <input type="hidden" name="name" value="HP 159-s">
-                            <input type="hidden" name="price" value="$6,500">
+                            <input type="hidden" name="price" value="6500">
                             <input type="hidden" name="disscount" value="22%">
                             <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
                             <input type="submit" value="Add to cart" class="add_cart">

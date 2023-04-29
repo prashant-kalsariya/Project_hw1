@@ -28,7 +28,8 @@ if (!mysqli_num_rows($qu)) {
     $name = mysqli_real_escape_string($con, $_POST['name']);
     $disscount = mysqli_real_escape_string($con, $_POST['disscount']);
     $photo = mysqli_real_escape_string($con, $_POST['photo']);
-    $insert_query = "insert into cart(id,name,price,disscount,photo) value($ids,'$name','$price','$disscount','$photo')";
+    $quantity = 1;
+    $insert_query = "insert into cart(id,name,price,disscount,photo,quantity) value($ids,'$name','$price','$disscount','$photo',$quantity)";
 
     $result = mysqli_query($con, $insert_query);
     if ($result) {

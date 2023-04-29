@@ -35,15 +35,18 @@ td button {
     width: 100%;
     border-radius: 1rem;
     border: none;
-    background-color: rgb(139, 241, 135);
+    background-color: rgb(177, 135, 241);
+
 
 
 }
 
 #button {
     border-radius: 1rem;
-    background-color: rgb(139, 241, 135);
+    background-color: rgb(177, 135, 241);
+    /* font-weight: bold; */
 }
+
 
 #button:hover {
     /* background-color: green; */
@@ -51,16 +54,17 @@ td button {
 }
 
 td button:hover {
-    background-color: rgb(111, 208, 111);
-    color: black;
+    /* background-color: rgb(111, 208, 111); */
+    color: rgb(179, 255, 0);
+    /* color: black; */
 }
 
-#no_cart{
+#no_cart {
     text-align: center;
     color: red;
 }
 
-#no_cart::after{
+#no_cart::after {
     display: block;
     content: "Please enter item in cart";
     /* text-align: center; */
