@@ -54,3 +54,14 @@ td button:hover {
     background-color: rgb(111, 208, 111);
     color: black;
 }
+
+#no_cart{
+    text-align: center;
+    color: red;
+}
+
+#no_cart::after{
+    display: block;
+    content: "Please enter item in cart";
+    /* text-align: center; */
+}

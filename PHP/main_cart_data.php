@@ -29,6 +29,12 @@
 
     include 'C:\xampp\htdocs\Project_practies\PHP\navbar.php';
 
+    if($arr_data['count'] == 0){
+        ?>
+        <h2 id="no_cart" >No data found</h2>
+        <?php
+    }
+
     $id = $_SESSION['id'];
 
     $select_query = "select * from cart where id=$id";
