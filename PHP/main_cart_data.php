@@ -72,7 +72,7 @@
                     </tr>
                     <tr>
                         <td>price</td>
-                        <td><?php echo  '$' . $arr['price'] * $arr['quantity'];  ?></td>
+                        <td><?php echo  '₹' . $arr['price'] * $arr['quantity'];  ?></td>
                     </tr>
                     <tr>
                         <td>disscount</td>

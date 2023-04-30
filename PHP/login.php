@@ -58,7 +58,7 @@ session_start();
             ?>
             <script>
                 alert("Email address is not exists, Please sign up first");
-                location.replace('\Project_practies\PHP\signup.php');
+                location.replace('\\Project_practies\\PHP\\signup.php');
             </script>
     <?php
         }
