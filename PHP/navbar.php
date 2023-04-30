@@ -42,7 +42,7 @@ $arr_data = mysqli_fetch_assoc($query);
                 </li>
 
             </ul>
-            <form class="d-flex" id="search">
+            <form class="d-flex" id="search" name="nav_submit">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
