@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+//This is new content
 $ids = $_SESSION['id'];
 // $_SESSION[$ids]['cart-count']++;
 
