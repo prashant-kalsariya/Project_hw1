@@ -4,7 +4,7 @@ session_start();
 $ids = $_SESSION['id'];
 // $_SESSION[$ids]['cart-count']++;
 
-include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
+include 'D:\xamp\htdocs\Project_practies\PHP\signup_connection.php';
 $name = $_POST['name'];
 
 $s_query = "select * from cart where name ='$name' and id ='$ids'";

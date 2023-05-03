@@ -13,7 +13,7 @@
     <title>ShopCart</title>
     <style>
         <?php
-        include 'C:\xampp\htdocs\Project_practies\CSS\main_index.css';
+        include 'D:\xamp\htdocs\Project_practies\CSS\main_index.css';
         ?>
     </style>
 </head>
@@ -28,7 +28,8 @@
         </script>
     <?php
     }
-    include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
+    include 'D:\xamp\htdocs\Project_practies\PHP\signup_connection.php';
+
 
     $id = $_SESSION['id'];
 
@@ -39,7 +40,7 @@
     ?>
     <div class="container">
         <?php
-        include 'C:\xampp\htdocs\Project_practies\PHP\navbar.php';
+        include 'D:\xamp\htdocs\Project_practies\PHP\navbar.php';
         ?>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
