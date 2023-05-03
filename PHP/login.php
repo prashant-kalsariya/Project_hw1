@@ -18,8 +18,7 @@ session_start();
 
 <body>
     <?php
-    include 'D:\xamp\htdocs\Project_practies\PHP\signup_connection.php';
-
+    include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
     if (isset($_POST['submit'])) {
 
@@ -59,7 +58,7 @@ session_start();
             ?>
             <script>
                 alert("Email address is not exists, Please sign up first");
-                location.replace('\Project_practies\PHP\signup.php');
+                location.replace('\\Project_practies\\PHP\\signup.php');
             </script>
     <?php
         }

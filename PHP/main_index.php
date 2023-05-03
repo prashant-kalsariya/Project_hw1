@@ -28,8 +28,7 @@
         </script>
     <?php
     }
-    include 'D:\xamp\htdocs\Project_practies\PHP\signup_connection.php';
-
+    include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
     $id = $_SESSION['id'];
 
