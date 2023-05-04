@@ -97,12 +97,6 @@ session_start();
 
 
         </div>
-        <!-- 
-        $_SESSION['name'] = $_POST['name'];
-$_SESSION['price'] = $_POST['price'];
-$_SESSION['disscount'] = $_POST['disscount'];
-$_SESSION['getby'] = $_POST['getby'];
-     -->
     </div>
 </body>
 

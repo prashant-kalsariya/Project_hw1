@@ -62,11 +62,11 @@
                         <td>
                             <a href="\Project_practies\PHP\minus.php?name=<?php echo $arr['name']
                                                                             ?>">
-                                <img src="\Project_practies\images\minus-logo.png" alt="Delte logo" title="Decrease quantity" height="30">
+                                <img src="\Project_practies\images\minus-logo.png" alt="reduce item" title="Decrease quantity" height="30">
 
                             </a><?php echo $arr['quantity']; ?><a href="\Project_practies\PHP\plus.php?name=<?php echo $arr['name']
                                                                                                             ?>">
-                                <img src="\Project_practies\images\plus-logo.png" alt="Delte logo" title="Increase quantity" height="30">
+                                <img src="\Project_practies\images\plus-logo.png" alt="increase item" title="Increase quantity" height="30">
                             </a>
                         </td>
                     </tr>
