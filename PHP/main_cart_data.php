@@ -14,7 +14,7 @@
 
     <style>
         <?php
-        include 'C:\xampp\htdocs\Project_practies\CSS\main_cart_data.css';
+        include 'D:\xamp\htdocs\Project_practies\CSS\main_cart_data.css';
         ?>
     </style>
 
