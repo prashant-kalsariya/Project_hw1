@@ -29,8 +29,6 @@ if (isset($_POST['submit'])) {
 
             $query2 = mysqli_query($con, $select_query);
             $arrdata = mysqli_fetch_array($query2);
-            $_SESSION['price'] = $arrdata['price'];
-            $_SESSION['id'] = $arrdata['id'];
         ?>
             <script>
                 alert('Add item to cart succesfully!! Your id is <?php echo $arrdata['id']; ?> Please not down it for future uses');

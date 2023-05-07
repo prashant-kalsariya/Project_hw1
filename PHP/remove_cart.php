@@ -10,7 +10,7 @@ if($result){
     ?>
     <script>
         alert('Delete successfully');
-        location.replace('cart_data.php');
+        location.replace('/Project_Practies/HTML/index.html');
     </script>
     <?php
 }else{
