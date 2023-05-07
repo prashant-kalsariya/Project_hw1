@@ -85,18 +85,17 @@
             <div class="col">
                 <div class="card h-100">
 
-                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
+                    <img src="\Project_practies\images\iphone14Promax.jpg" class="card-img-top" alt="iPhone14 Pro max">
                     <div class="card-body">
-                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">iPhone14 Pro max</h5>
+                        <p class="card-text">From ₹22317.00/mo.Per Month with instant savings§§ and No Cost EMI§Footnote or₹139900.00Footnote‡</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 15-s">
-                            <input type="hidden" name="price" value="6500">
+                            <input type="hidden" name="name" value="iPhone14 Pro max">
+                            <input type="hidden" name="price" value="139900">
                             <input type="hidden" name="disscount" value="22%">
-                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
+                            <input type="hidden" name="photo" value="\Project_practies\images\iphone14Promax.jpg">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -105,18 +104,26 @@
             <!-- </a> -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
+                    <img src="\Project_practies\images\macbook.jpg" class="card-img-top" alt="macbook pro">
                     <div class="card-body">
-                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Macbook Pro</h5>
+                        <p class="card-text">16-core Neural Engine
+                            35.97 cm (14.2-inch) Liquid Retina XDR display²
+                            Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port
+                            Magic Keyboard with Touch ID
+                            Force Touch trackpad
+                            67W USB-C Power Adapter
+                            From ₹31983.00/mo.Per Month with instant savings§§ and No Cost EMI§Footnote
+                            or
+                            ₹199900.00‡
+                            Select</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 16-s">
-                            <input type="hidden" name="price" value="7500">
+                            <input type="hidden" name="name" value="Macbook">
+                            <input type="hidden" name="price" value="199900">
                             <input type="hidden" name="disscount" value="22%">
-                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
+                            <input type="hidden" name="photo" value="\Project_practies\images\macbook.jpg">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -124,18 +131,25 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
+                    <img src="\Project_practies\images\Asus-ROG-Phone.webp" class="card-img-top" alt="Asus Rog6">
                     <div class="card-body">
-                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Asus Rog6</h5>
+                        <p class="card-text">
+                            ASUS ROG Phone 6 Pro
+                            Operating System Android 12.0
+                            Cellular Technology 5G
+                            Memory Storage Capacity 512 GB
+                            Connectivity Technology USB
+                            Screen Size 6.78 Inches
+                            Wireless network technology GSM
+                        From ₹88,999</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 17-s">
-                            <input type="hidden" name="price" value="6500">
+                            <input type="hidden" name="name" value="Asus Rog6">
+                            <input type="hidden" name="price" value="88999">
                             <input type="hidden" name="disscount" value="22%">
-                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
+                            <input type="hidden" name="photo" value="\Project_practies\images\Asus-ROG-Phone.webp">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -143,18 +157,17 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
+                    <img src="\Project_practies\images\Asus_Rog.jpg" class="card-img-top" alt="Asus Rog strix G17">
                     <div class="card-body">
-                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Asus Rog strix G17</h5>
+                        <p class="card-text">17.3-inch (43.94 cms) FHD 144Hz, AMD Ryzen 7 4800H, RTX 3050 Ti 4GB Graphics, Gaming Laptop (16GB/1TB SSD/Windows 11//Gray/2.4 kg), G713IE-HX040W From  ₹84,989</p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 18-s">
-                            <input type="hidden" name="price" value="6500">
+                            <input type="hidden" name="name" value="Asus Rog Stix G17">
+                            <input type="hidden" name="price" value="84989">
                             <input type="hidden" name="disscount" value="22%">
-                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
+                            <input type="hidden" name="photo" value="\Project_practies\images\Asus_Rog.jpg">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -162,18 +175,19 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
+                    <img src="\Project_practies\images\s21_ultra.jpg" class="card-img-top" alt="Samsung galaxy s21 ultra">
                     <div class="card-body">
-                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Samsung galaxy s21 ulta</h5>
+                        <p class="card-text">SAMSUNG Galaxy S21 Ultra (Phantom Black, 256 GB)  (12 GB RAM)
+                            From ₹1,28,999
+                        </p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 19-s">
-                            <input type="hidden" name="price" value="6500">
+                            <input type="hidden" name="name" value="Samsung s21 ulta">
+                            <input type="hidden" name="price" value="128999">
                             <input type="hidden" name="disscount" value="22%">
-                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
+                            <input type="hidden" name="photo" value="\Project_practies\images\s21_ultra.jpg">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
@@ -181,25 +195,26 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="\Project_practies\images\HP-15s.avif" class="card-img-top" alt="HP-15s">
+                    <img src="\Project_practies\images\Samsung_galaxy_z-fold.jpg" class="card-img-top" alt="Samsung galaxy z-fold">
                     <div class="card-body">
-                        <h5 class="card-title">HP 15s Ryzen 5 5500U</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Samsung galaxy z-fold</h5>
+                        <p class="card-text">SAMSUNG Galaxy Z Fold3 5G (Phantom Green, 256 GB)  (12 GB RAM)
+                            From ₹1,25,900
+                        </p>
                     </div>
                     <div class="card-footer">
                         <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                            <input type="hidden" name="name" value="HP 159-s">
-                            <input type="hidden" name="price" value="6500">
+                            <input type="hidden" name="name" value="Samsung galaxy z fold">
+                            <input type="hidden" name="price" value="125900">
                             <input type="hidden" name="disscount" value="22%">
-                            <input type="hidden" name="photo" value="\Project_practies\images\HP-15s.avif">
+                            <input type="hidden" name="photo" value="\Project_practies\images\Samsung_galaxy_z-fold.jpg">
                             <input type="submit" value="Add to cart" class="add_cart">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-  
+
 
 
         <!-- Optional JavaScript; choose one of the two! -->
