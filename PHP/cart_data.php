@@ -13,7 +13,7 @@ session_start();
     <title>Cart Data</title>
     <style>
         <?php
-        include 'C:\xampp\htdocs\Project_practies\CSS\cart_data.css';
+        include 'D:\xamp\htdocs\Project_practies\CSS\cart_data.css';
         ?>
     </style>
 </head>
@@ -33,7 +33,7 @@ session_start();
             <?php
 
             if (isset($_POST['submit'])) {
-                include 'C:\xampp\htdocs\Project_practies\PHP\connection.php';
+                include 'D:\xamp\htdocs\Project_practies\PHP\connection.php';
                 $ids = $_POST['search'];
                 $select_query = "select * from practice2 where id='$ids'";
                 $result = mysqli_query($con, $select_query);

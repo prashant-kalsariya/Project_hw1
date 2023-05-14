@@ -18,11 +18,12 @@ session_start();
 
 <body>
     <?php
-    include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
+    include 'D:\xamp\htdocs\Project_practies\PHP\signup_connection.php';
+
     if (isset($_POST['submit'])) {
 
-     
-        
+
+
         $email = mysqli_escape_string($con, $_POST['email']);
         $password = mysqli_escape_string($con, $_POST['password']);
 
@@ -32,20 +33,20 @@ session_start();
 
 
         if ($erow) {
-         
+
             $email_array = mysqli_fetch_assoc($equery);
             $_SESSION['id'] = $email_array['id'];
             $pass = $email_array['password'];
             $pass_varify = password_verify($password, $pass);
             if ($pass_varify) {
-               
-            ?>
+
+    ?>
                 <script>
                     alert('Login successfully');
                     location.replace('\\Project_practies\\PHP\\main_index.php');
                 </script>
             <?php
-            // header('location:\Project_practies\PHP\main_index.php');
+                // header('location:\Project_practies\PHP\main_index.php');
             } else {
             ?>
                 <script>
