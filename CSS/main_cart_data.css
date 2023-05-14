@@ -19,6 +19,7 @@ td {
 
 .cart_info {
     margin-bottom: 5px;
+
 }
 
 td a {
@@ -68,4 +69,10 @@ td button:hover {
     display: block;
     content: "Please enter item in cart";
     /* text-align: center; */
+}
+
+.total_detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -23,6 +23,7 @@ if (!mysqli_num_rows($qu)) {
         $cnt = 1;
     }
     $update_query = "update signup set count = $cnt where id = $ids";
+
     $query = mysqli_query($con, $update_query);
     $price = mysqli_real_escape_string($con, $_POST['price']);
     $name = mysqli_real_escape_string($con, $_POST['name']);
@@ -35,7 +36,15 @@ if (!mysqli_num_rows($qu)) {
     if ($result) {
 ?>
         <script>
-            alert('add to cart successfully');
+            alert('add to cart an item successfully ');
+            // window.location = '\\Project_practies\\PHP\\main_index.php';
+            location.replace('\\Project_practies\\PHP\\main_index.php');
+        </script>
+    <?php
+    }else{
+        ?>
+        <script>
+            alert('add to cart an item not successfully ');
             // window.location = '\\Project_practies\\PHP\\main_index.php';
             location.replace('\\Project_practies\\PHP\\main_index.php');
         </script>
