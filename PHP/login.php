@@ -18,7 +18,7 @@ session_start();
 
 <body>
     <?php
-    include 'D:\xamp\htdocs\Project_practies\PHP\signup_connection.php';
+    include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
     if (isset($_POST['submit'])) {
 

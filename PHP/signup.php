@@ -13,7 +13,7 @@
 
 <body>
     <?php
-    include 'D:\xamp\htdocs\Project_practies\PHP\signup_connection.php';
+    include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
     if (isset($_POST['submit'])) {
         $name = mysqli_real_escape_string($con, $_POST['name']);

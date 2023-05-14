@@ -13,7 +13,7 @@
     <title>ShopCart</title>
     <style>
         <?php
-        include 'D:\xamp\htdocs\Project_practies\CSS\main_index.css';
+        include 'C:\xampp\htdocs\Project_practies\CSS\main_index.css';
         ?>
     </style>
 </head>
@@ -28,7 +28,7 @@
         </script>
     <?php
     }
-    include 'D:\xamp\htdocs\Project_practies\PHP\signup_connection.php';
+    include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
     $id = $_SESSION['id'];
 
@@ -37,9 +37,8 @@
     $arr_data = mysqli_fetch_assoc($query);
 
     ?>
-    <div class="container">
         <?php
-        include 'D:\xamp\htdocs\Project_practies\PHP\navbar.php';
+        include 'C:\xampp\htdocs\Project_practies\PHP\navbar.php';
         ?>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -131,7 +130,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="\Project_practies\images\Asus-ROG-Phone.webp" class="card-img-top" alt="Asus Rog6">
+                    <img src="\Project_practies\images\Asus-ROG-Phone.webp" class="card-img-top" alt="Asus Rog6" height="400">
                     <div class="card-body">
                         <h5 class="card-title">Asus Rog6</h5>
                         <p class="card-text">
@@ -175,7 +174,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="\Project_practies\images\s21_ultra.jpg" class="card-img-top" alt="Samsung galaxy s21 ultra">
+                    <img src="\Project_practies\images\s21_ultra.jpg" class="card-img-top" alt="Samsung galaxy s21 ultra" height="400">
                     <div class="card-body">
                         <h5 class="card-title">Samsung galaxy s21 ulta</h5>
                         <p class="card-text">SAMSUNG Galaxy S21 Ultra (Phantom Black, 256 GB)  (12 GB RAM)
@@ -195,7 +194,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="\Project_practies\images\Samsung_galaxy_z-fold.jpg" class="card-img-top" alt="Samsung galaxy z-fold">
+                    <img src="\Project_practies\images\Samsung_galaxy_z-fold.jpg" class="card-img-top" alt="Samsung galaxy z-fold" height="400">
                     <div class="card-body">
                         <h5 class="card-title">Samsung galaxy z-fold</h5>
                         <p class="card-text">SAMSUNG Galaxy Z Fold3 5G (Phantom Green, 256 GB)  (12 GB RAM)
@@ -227,7 +226,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-    </div>
 </body>
 
 </html>
