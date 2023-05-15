@@ -41,6 +41,12 @@
                 $insert_query = "insert into signup(name,email,mobile,password,cpassword) value ('$name','$email','$mobile','$pass','$cpass')";
                 $query = mysqli_query($con, $insert_query);
                 if ($query) {
+                    $select_query = "select * from signup where email = '$email'";
+                    $res = mysqli_query($con,$select_query);
+                    $arr = mysqli_fetch_array($res);
+                    $id = $arr['id'];
+                    $uquery = "insert into profile(id) value ('$id')";
+                    $ures = mysqli_query($con,$uquery);
             ?>
                     <script>
                         alert('Sign Up succesfully');

@@ -36,10 +36,7 @@ $arr_data = mysqli_fetch_assoc($query);
                         <li><a class="dropdown-item" href="\Project_practies\PHP\logout.php">Log Out</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-
-                </li>
+                
 
             </ul>
             <form class="d-flex" id="search" name="nav_submit">
@@ -54,6 +51,9 @@ $arr_data = mysqli_fetch_assoc($query);
                         <?php echo $arr_data['count'];  ?>
 
                     </span>
+                </a>
+                <a href="\Project_practies\PHP\profile.php" class="user_photo">
+                    <img src="\Project_practies\images\HP-15s.avif" alt="Profile photo" height="40" style="border-radius:50% " ; title="Profile">
                 </a>
             </form>
         </div>

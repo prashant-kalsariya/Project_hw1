@@ -10,11 +10,17 @@ td {
     background-color: rgb(208, 207, 207);
 
 }
-
+.main{
+    display: flex;
+}
 .container {
     /* display: flex; */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 40vw;
+    overflow:scroll;
+    height: 80vh;
+
 }
 
 .cart_info {
@@ -72,6 +78,18 @@ td button:hover {
 }
 
 .total_detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    border: 1px solid gray;
+    height: 80vh;
+    width: 55vw;
+}
+.right big{
+    font-size: 2.3em;
     display: flex;
     justify-content: center;
     align-items: center;
