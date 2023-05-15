@@ -7,7 +7,6 @@ $query = mysqli_query($con,$select_query);
 if(!$query){
     die("Error");
 }
-
 // Include the TCPDF library
 require_once('C:\TCPDF-main\tcpdf.php');
 // Create a new PDF document
