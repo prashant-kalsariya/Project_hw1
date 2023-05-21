@@ -1,96 +1,69 @@
-table,
-tr,
-td {
-    border: 1px solid rgb(255, 255, 255);
-    border-collapse: collapse;
-    padding: 3px;
-}
-
-td {
-    background-color: rgb(208, 207, 207);
-
-}
-.main{
-    display: flex;
-}
 .container {
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 40vw;
-    overflow:scroll;
-    height: 80vh;
-
+    display: flex;
+    /* border: 1px solid gray; */
+    width: 50vw;
 }
-
-.cart_info {
-    margin-bottom: 5px;
-
-}
-
-td a {
+a{
     text-decoration: none;
 }
 
-#delete a {
-    /* border: 1px solid green; */
-    margin-left: 110px;
-    /* display: block; */
-}
-
-td button {
-    width: 100%;
-    border-radius: 1rem;
-    border: none;
-    background-color: rgb(177, 135, 241);
-
-
-
-}
-
-#button {
-    border-radius: 1rem;
-    background-color: rgb(177, 135, 241);
-    /* font-weight: bold; */
-}
-
-
-#button:hover {
-    /* background-color: green; */
-    color: black;
-}
-
-td button:hover {
-    /* background-color: rgb(111, 208, 111); */
-    color: rgb(179, 255, 0);
-    /* color: black; */
-}
-
-#no_cart {
-    text-align: center;
-    color: red;
-}
-
-#no_cart::after {
-    display: block;
-    content: "Please enter item in cart";
-    /* text-align: center; */
-}
-
-.total_detail{
+.left {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.right{
     border: 1px solid gray;
-    height: 80vh;
-    width: 55vw;
+    width: 12vw;
 }
-.right big{
-    font-size: 2.3em;
+
+.left img {
+    width: 10vw;
+}
+
+.right {
+    width: 38vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.right .top {
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.top big {
+    text-align: center;
+}
+
+.right .bottom {
+    border: 1px solid gray;
+    width: 100%;
+    text-decoration: none;
+    height: 4vh;
+    background-color: green;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.right .bottom:hover{
+    background-color: rgb(2, 165, 2);
+}
+
+.main{
+    width: 50vw;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+.data_container{
+    display: flex;
+}
+.left_item{
+    height: 80vh;
+    width: 49vw;
+    border: 1px solid gray;
+    margin: 3px;
 }
