@@ -103,7 +103,7 @@ $id = $_SESSION['id'];
         </div>
 
         <div class="col-12">
-            <a href="\Project_practies\PHP\pdf.php?id=<?php echo $id; ?>" class="btn btn-primary">
+            <a href="\Project_practies\PHP\pdf.php?id=<?php echo $id; ?>" class="btn btn-primary" target="_blank">
                 Buy Now
             </a>
         </div>

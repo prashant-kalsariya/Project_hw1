@@ -67,3 +67,7 @@ a{
     border: 1px solid gray;
     margin: 3px;
 }
+
+.left_item h1{
+    text-align: center;
+}

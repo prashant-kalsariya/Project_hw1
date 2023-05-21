@@ -6,7 +6,11 @@ $select_query = "select * from signup where id=$id";
 $query = mysqli_query($con, $select_query);
 $arr_data = mysqli_fetch_assoc($query);
 
-
+$select_query2 = "select * from profile where id= $id";
+$query2 = mysqli_query($con, $select_query2);
+$arr2 = mysqli_fetch_assoc($query2);
+$imagepath = '\Project_practies\images\minus-logo.png';
+// echo $imagepath;
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -53,7 +57,7 @@ $arr_data = mysqli_fetch_assoc($query);
                     </span>
                 </a>
                 <a href="\Project_practies\PHP\profile.php" class="user_photo">
-                    <img src="\Project_practies\images\HP-15s.avif" alt="Profile photo" height="40" style="border-radius:50% " ; title="Profile">
+                    <img src="<?php if(isset($arr2['photo'])){ echo $arr2['photo']; }else{ echo $imagepath; }?>" alt="Profile photo" height="40" style="border-radius:50% " ; title="Profile">
                 </a>
             </form>
         </div>

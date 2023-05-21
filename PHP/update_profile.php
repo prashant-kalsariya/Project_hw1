@@ -12,6 +12,7 @@ if (!$query) {
 }
 $arr_data = mysqli_fetch_array($query);
 if (isset($_POST['submit'])) {
+    include 'C:\xampp\htdocs\Project_practies\PHP\upload_user_image.php';
     $name = mysqli_escape_string($con, $_POST['name']);
     $gender = mysqli_escape_string($con, $_POST['gender']);
     $mobile = mysqli_escape_string($con, $_POST['mobile']);
@@ -35,12 +36,12 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="form_container">
-        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
             <div class="input_field">
                 <div class="input_field">
 
 
-                    <input type="file" name="UploadFile" id="UploadFile" value=" <?php if (isset($arr_data['photo'])) echo $arr_data['photo']; ?> ">
+                    <input type="file" name="fileUpload" id="chooseFile" value=" <?php if (isset($arr_data['photo'])) echo $arr_data['photo']; ?> ">
                 </div>
                 <div class="input_field">
                     <label for="name">Name</label>
