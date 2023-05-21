@@ -6,7 +6,7 @@ session_start();
 
 <?php
 if (isset($_POST['submit'])) {
-    include 'C:\xampp\htdocs\Project_practies\PHP\connection.php';
+    include 'D:\xamp\htdocs\Project_practies\PHP\connection.php';
     // include 'C:\xampp\htdocs\Project_practies\PHP\connection.php';
     $price = mysqli_real_escape_string($con, $_POST['price']);
     $name = mysqli_real_escape_string($con, $_POST['name']);
