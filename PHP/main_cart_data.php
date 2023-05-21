@@ -15,6 +15,7 @@
     <style>
         <?php
         include 'C:\xampp\htdocs\Project_practies\CSS\main_cart_data.css';
+        // include 'C:\xampp\htdocs\Project_practies\CSS\main_cart_data.css';
         ?>
     </style>
 
@@ -26,8 +27,10 @@
 
     session_start();
     include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
+    // include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
     include 'C:\xampp\htdocs\Project_practies\PHP\navbar.php';
+    // include 'C:\xampp\htdocs\Project_practies\PHP\navbar.php';
 
     if ($arr_data['count'] == 0) {
     ?>

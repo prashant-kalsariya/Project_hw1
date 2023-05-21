@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
+// include 'C:\xampp\htdocs\Project_practies\PHP\signup_connection.php';
 
 // $id = $_GET['id'];
 $id = $_SESSION['id'];
