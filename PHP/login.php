@@ -14,6 +14,13 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <style>
+        .captcha{
+            padding: 20px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -31,7 +38,7 @@ session_start();
         $email_query = "select * from signup where email='$email'";
         $equery = mysqli_query($con, $email_query);
         $erow = mysqli_num_rows($equery);
-
+        $code = $_POST['captcha'];
 
         if ($erow) {
 
@@ -40,12 +47,35 @@ session_start();
             $pass = $email_array['password'];
             $pass_varify = password_verify($password, $pass);
             if ($pass_varify) {
-
+                if ($code) {
+                    if ($_POST['captcha'] == $_SESSION['CAPTCHA_CODE']) {
     ?>
-                <script>
-                    alert('Login successfully');
-                    location.replace('\\Project_practies\\PHP\\main_index.php');
-                </script>
+                        <script>
+                            alert('Login successfully');
+                            location.replace('\\Project_practies\\PHP\\main_index.php');
+                        </script>
+                    <?php
+                    } else {
+                    ?>
+                        <script>
+                            alert('captcha is not valid');
+                            location.replace('\\Project_practies\\PHP\\login.php');
+                        </script>
+                    <?php
+
+                    }
+                } else {
+                    ?>
+                    <script>
+                        alert('Fill the captcha first');
+                        location.replace('\\Project_practies\\PHP\\login.php');
+                    </script>
+                <?php
+
+                }
+                ?>
+
+
             <?php
                 // header('location:\Project_practies\PHP\main_index.php');
             } else {
@@ -86,6 +116,15 @@ session_start();
                     <img src="https://e7.pngegg.com/pngimages/778/12/png-clipart-computer-icons-skype-icon-design-change-password-logo-internet.png" alt="image">
                 </div>
 
+                <div class="captcha">
+                    <label for="cap">Enter captcha</label>
+                    <input type="text" placeholder="enter captcha" name="captcha">
+                    <br>
+                    <br>
+                    <img src="captcha.php" alt="Captcha code"><br>
+                    <button onclick="reload()">Reload</button>
+                </div>
+
                 <div class="input_field">
                     <input type="submit" value="Login" name="submit" id="submit">
                 </div>
@@ -93,6 +132,13 @@ session_start();
             </form>
         </div>
     </div>
+
+    <script>
+        function reload() {
+            window.location.reload();
+        }
+    </script>
+
 </body>
 
 </html>
