@@ -37,7 +37,6 @@ if (isset($_POST['submit'])) {
 <body>
     <div class="form_container">
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
-            <div class="input_field">
                 <div class="input_field">
 
 
@@ -58,7 +57,7 @@ if (isset($_POST['submit'])) {
 
                 <div class="input_field">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" value=" <?php if (isset($arr_data['email'])) echo $arr_data['email']; ?> ">
+                    <input type="email" name="email" id="email" value=" <?php if (isset($arr_data['email'])) echo $arr_data['email']; ?> ">
                 </div>
                 <div class="input_field">
                     <input type="radio" name="gender" id="male" value="male" <?php if (isset($arr_data['gender']) && $arr_data['gender'] == "male") echo "checked"; ?>>
@@ -70,7 +69,6 @@ if (isset($_POST['submit'])) {
                 </div>
 
                 <div class="input_field">
-
                     <input type="submit" value="Update Now" name="submit">
                 </div>
 

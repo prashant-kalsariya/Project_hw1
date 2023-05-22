@@ -19,9 +19,15 @@ $arr = mysqli_fetch_array($query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <style>
+        img{
+            height: 30vh;
+        }
+    </style>
 </head>
 
 <body>
+    <img src="<?php echo $arr['photo']; ?>" alt="User Photo">
     <p>Your name is : <?php echo $arr['name']; ?></p>
     <p>Your mobile number is : <?php echo $arr['mobile']; ?></p>
     <p>Your Email address is : <?php echo $arr['email']; ?></p>

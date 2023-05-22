@@ -84,7 +84,13 @@ session_start();
                     <input type="password" name="password" id="password" placeholder="Enter your password" required>
                     <img src="https://e7.pngegg.com/pngimages/778/12/png-clipart-computer-icons-skype-icon-design-change-password-logo-internet.png" alt="image">
                 </div>
-
+                <div class="select">
+                    <select name="value" id="value">
+                        <option value="select_option" disabled>Who are you</option>
+                        <option value="user" name="user" >User</option>
+                        <option value="admin" name="admin">Admin</option>
+                    </select>
+                </div>
                 <div class="input_field">
                     <input type="submit" value="Login" name="submit" id="submit">
                 </div>

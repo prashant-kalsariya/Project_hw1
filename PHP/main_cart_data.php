@@ -36,7 +36,7 @@
     ?>
         <h2 id="no_cart">No data found</h2>
     <?php
-    }
+    }else{
 
     $id = $_SESSION['id'];
 
@@ -83,6 +83,9 @@
             <h1>Summary of the cart</h1>
         </div>
     </div>
+    <?php
+    }
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

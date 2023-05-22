@@ -28,6 +28,7 @@ a{
 }
 
 .right .top {
+    padding: 1rem;
     border: 1px solid gray;
     width: 100%;
 }
@@ -37,7 +38,7 @@ a{
 }
 
 .right .bottom {
-    border: 1px solid gray;
+    border: none;
     width: 100%;
     text-decoration: none;
     height: 4vh;
@@ -70,4 +71,8 @@ a{
 
 .left_item h1{
     text-align: center;
+}
+#no_cart{
+    text-align: center;
+    color: red;
 }
