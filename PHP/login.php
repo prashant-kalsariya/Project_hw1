@@ -14,6 +14,12 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        .captcha {
+            padding: 20px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -84,12 +90,21 @@ session_start();
                     <input type="password" name="password" id="password" placeholder="Enter your password" required>
                     <img src="https://e7.pngegg.com/pngimages/778/12/png-clipart-computer-icons-skype-icon-design-change-password-logo-internet.png" alt="image">
                 </div>
-                <div class="select">
+                <!-- <div class="select">
                     <select name="value" id="value">
                         <option value="select_option" disabled>Who are you</option>
-                        <option value="user" name="user" >User</option>
+                        <option value="user" name="user">User</option>
                         <option value="admin" name="admin">Admin</option>
                     </select>
+
+                </div> -->
+                <div class="captcha">
+                    <label for="cap">Enter captcha</label>
+                    <input type="text" placeholder="enter captcha" name="captcha">
+                    <br>
+                    <br>
+                    <img src="captcha.php" alt="Captcha code"><br>
+                    <button onclick="reload()">Reload</button>
                 </div>
                 <div class="input_field">
                     <input type="submit" value="Login" name="submit" id="submit">
@@ -98,6 +113,11 @@ session_start();
             </form>
         </div>
     </div>
+    <script>
+        function reload() {
+            window.location.reload();
+        }
+    </script>
 </body>
 
 </html>

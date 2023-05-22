@@ -9,8 +9,7 @@ $arr_data = mysqli_fetch_assoc($query);
 $select_query2 = "select * from profile where id= $id";
 $query2 = mysqli_query($con, $select_query2);
 $arr2 = mysqli_fetch_assoc($query2);
-$imagepath = '\Project_practies\images\minus-logo.png';
-// echo $imagepath;
+$imagepath = '\Project_practies\images\no_profile_photo.webp';
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -57,7 +56,7 @@ $imagepath = '\Project_practies\images\minus-logo.png';
                     </span>
                 </a>
                 <a href="\Project_practies\PHP\profile.php" class="user_photo">
-                    <img src="<?php if(isset($arr2['photo'])){ echo $arr2['photo']; }else{ echo $imagepath; }?>" alt="Profile photo" height="40" style="border-radius:50% " ; title="Profile">
+                    <img src="<?php if(isset($arr2['photo']) && !empty($arr2['photo'])){ echo $arr2['photo']; }else{ echo $imagepath; }?>" alt="Profile photo" height="40" style="border-radius:50% " ; title="Profile">
                 </a>
             </form>
         </div>

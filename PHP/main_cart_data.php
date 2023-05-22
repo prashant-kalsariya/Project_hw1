@@ -81,6 +81,7 @@
         </main>
         <div class="left_item">
             <h1>Summary of the cart</h1>
+            
         </div>
     </div>
     <?php
