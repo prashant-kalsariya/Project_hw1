@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+//I am adding new commits
 $id = $_SESSION['id'];
 
 $select_query = "select * from signup where id=$id";
@@ -43,8 +44,8 @@ $imagepath = '\Project_practies\images\no_profile_photo.webp';
 
             </ul>
             <form class="d-flex" id="search" name="nav_submit">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
             </form>
             <form class="d-flex">
 
