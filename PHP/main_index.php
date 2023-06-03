@@ -227,25 +227,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-    <script>
-        document.getElementById('searchButton').addEventListener('click', searchProducts);
-
-        function searchProducts() {
-            var input = document.getElementById('searchInput').value.toLowerCase();
-            var cards = document.getElementsByClassName('card');
-
-            for (var i = 0; i < cards.length; i++) {
-                var title = cards[i].querySelector('.card-title').textContent.toLowerCase();
-                var description = cards[i].querySelector('.card-text').textContent.toLowerCase();
-
-                if (title.includes(input) || description.includes(input)) {
-                    cards[i].style.display = 'block';
-                } else {
-                    cards[i].style.display = 'none';
-                }
-            }
-        }
-    </script>
 </body>
 
 </html>

@@ -21,7 +21,12 @@
         $mobile = mysqli_real_escape_string($con, $_POST['mobile']);
         $password = mysqli_real_escape_string($con, $_POST['password']);
         $cpassword = mysqli_real_escape_string($con, $_POST['cpassword']);
-
+        $role = mysqli_real_escape_string($con, $_POST['role']);
+        if($role == "admin"){
+            $role = 1;
+        }else{
+            $role = 0;
+        }
         $email_query = "select * from signup where email='$email'";
         $equery = mysqli_query($con, $email_query);
         $erow = mysqli_num_rows($equery);
@@ -38,7 +43,7 @@
                 $cpass = password_hash($cpassword, PASSWORD_BCRYPT);
 
                 //Write query here
-                $insert_query = "insert into signup(name,email,mobile,password,cpassword) value ('$name','$email','$mobile','$pass','$cpass')";
+                $insert_query = "insert into signup(name,email,mobile,password,cpassword,role) value ('$name','$email','$mobile','$pass','$cpass','$role')";
                 $query = mysqli_query($con, $insert_query);
                 if ($query) {
                     $select_query = "select * from signup where email = '$email'";
@@ -96,6 +101,13 @@
                 <div class="input_field">
                     <input type="password" name="cpassword" id="cpassword" placeholder="Repeat your password" required>
                     <img src="https://e7.pngegg.com/pngimages/778/12/png-clipart-computer-icons-skype-icon-design-change-password-logo-internet.png" alt="image">
+                </div>
+                <div class="input_field">
+                    <select name="role" id="role">
+                        <option value="who" disabled>Who are you</option>
+                        <option value="user" name="user">user</option>
+                        <option value="admin" name="admin">Admin</option>
+                    </select>
                 </div>
                 <div class="input_field">
                     <input type="submit" value="Sign Up" name="submit" id="submit">

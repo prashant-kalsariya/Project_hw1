@@ -38,24 +38,16 @@ $imagepath = '\Project_practies\images\no_profile_photo.webp';
                         <li><a class="dropdown-item" href="\Project_practies\PHP\logout.php">Log Out</a></li>
                     </ul>
                 </li>
-                
+
 
             </ul>
-            <form class="d-flex" id="search" name="nav_submit">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
-                <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
-            </form>
             <form class="d-flex">
-
-                <a href="\Project_practies\PHP\main_cart_data.php" class="btn btn-primary position-relative">
-                    Cart
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        <?php echo $arr_data['count'];  ?>
-
-                    </span>
-                </a>
                 <a href="\Project_practies\PHP\profile.php" class="user_photo">
-                    <img src="<?php if(isset($arr2['photo']) && !empty($arr2['photo'])){ echo $arr2['photo']; }else{ echo $imagepath; }?>" alt="Profile photo" height="40" style="border-radius:50% " ; title="Profile">
+                    <img src="<?php if (isset($arr2['photo']) && !empty($arr2['photo'])) {
+                                    echo $arr2['photo'];
+                                } else {
+                                    echo $imagepath;
+                                } ?>" alt="Profile photo" height="40" style="border-radius:50% " ; title="Profile">
                 </a>
             </form>
         </div>

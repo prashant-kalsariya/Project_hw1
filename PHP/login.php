@@ -45,16 +45,25 @@ session_start();
             $pass = $email_array['password'];
             $pass_varify = password_verify($password, $pass);
             if ($pass_varify) {
-
+                if ($email_array['role']) {
     ?>
-                <script>
-                    alert('Login successfully');
-                    location.replace('\\Project_practies\\PHP\\main_index.php');
-                </script>
-            <?php
+                    <script>
+                        alert('Login successfully');
+                        location.replace('\\Project_practies\\PHP\\admin_index.php');
+                    </script>
+                <?php
+                } else {
+
+                ?>
+                    <script>
+                        alert('Login successfully');
+                        location.replace('\\Project_practies\\PHP\\main_index.php');
+                    </script>
+                <?php
+                }
                 // header('location:\Project_practies\PHP\main_index.php');
             } else {
-            ?>
+                ?>
                 <script>
                     alert("Password is wrong");
                 </script>
