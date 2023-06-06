@@ -52,22 +52,22 @@
             <div class="carousel-item active">
                 <img src="\Project_practies\images\HP-15s.avif" class="d-block w-100" alt="Image">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>HP 15-s</h5>
+                    <p>Shopcart's choice. best product for today</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="\Project_practies\images\Air-conditionar.jpeg" class="d-block w-100" alt="Image">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Samsung AC</h5>
+                    <p>Full Cool and not any warm</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="\Project_practies\images\television.jpg" class="d-block w-100" alt="Image">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5 style="color:white; font-weight:bold">BPL television</h5>
+                    <p>Shopcart's choice for the TV.</p>
                 </div>
             </div>
         </div>
@@ -82,138 +82,34 @@
     </div>
     <!-- <h1>Hello, world!</h1> -->
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- <a href="#"> -->
-        <div class="col">
-            <div class="card h-100">
-
-                <img src="\Project_practies\images\iphone14Promax.jpg" class="card-img-top" alt="iPhone14 Pro max">
-                <div class="card-body">
-                    <h5 class="card-title">iPhone14 Pro max</h5>
-                    <p class="card-text">From ₹22317.00/mo.Per Month with instant savings§§ and No Cost EMI§Footnote or₹139900.00Footnote‡</p>
-                </div>
-                <div class="card-footer">
-                    <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                        <input type="hidden" name="name" value="iPhone14 Pro max">
-                        <input type="hidden" name="price" value="139900">
-                        <input type="hidden" name="disscount" value="22%">
-                        <input type="hidden" name="photo" value="\Project_practies\images\iphone14Promax.jpg">
-                        <input type="submit" value="Add to cart" class="add_cart">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- </a> -->
-        <div class="col">
-            <div class="card h-100">
-                <img src="\Project_practies\images\macbook.jpg" class="card-img-top" alt="macbook pro">
-                <div class="card-body">
-                    <h5 class="card-title">Macbook Pro</h5>
-                    <p class="card-text">16-core Neural Engine
-                        35.97 cm (14.2-inch) Liquid Retina XDR display²
-                        Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port
-                        Magic Keyboard with Touch ID
-                        Force Touch trackpad
-                        67W USB-C Power Adapter
-                        From ₹31983.00/mo.Per Month with instant savings§§ and No Cost EMI§Footnote
-                        or
-                        ₹199900.00‡
-                        Select</p>
-                </div>
-                <div class="card-footer">
-                    <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                        <input type="hidden" name="name" value="Macbook">
-                        <input type="hidden" name="price" value="199900">
-                        <input type="hidden" name="disscount" value="22%">
-                        <input type="hidden" name="photo" value="\Project_practies\images\macbook.jpg">
-                        <input type="submit" value="Add to cart" class="add_cart">
-                    </form>
+        
+        <?php
+        $select_query = "select * from items";
+        $query = mysqli_query($con, $select_query);
+        while ($arr = mysqli_fetch_array($query)) {
+        ?>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="<?php echo $arr['photo'];  ?>" class="card-img-top" alt="Samsung galaxy z-fold" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title"><?php  echo $arr['name']; ?></h5>
+                        <p class="card-text"><?php echo $arr['description']; ?>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <form action="\Project_practies\PHP\add_to_cart.php" method="post">
+                            <input type="hidden" name="name" value="<?php echo $arr['name'];  ?>">
+                            <input type="hidden" name="price" value="<?php echo $arr['price'];  ?>">
+                            <input type="hidden" name="disscount" value="<?php echo $arr['disscount'];  ?>">
+                            <input type="hidden" name="photo" value="<?php echo $arr['photo'];  ?>">
+                            <input type="submit" value="Add to cart" class="add_cart">
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="\Project_practies\images\Asus-ROG-Phone.webp" class="card-img-top" alt="Asus Rog6" height="400">
-                <div class="card-body">
-                    <h5 class="card-title">Asus Rog6</h5>
-                    <p class="card-text">
-                        ASUS ROG Phone 6 Pro
-                        Operating System Android 12.0
-                        Cellular Technology 5G
-                        Memory Storage Capacity 512 GB
-                        Connectivity Technology USB
-                        Screen Size 6.78 Inches
-                        Wireless network technology GSM
-                        From ₹88,999</p>
-                </div>
-                <div class="card-footer">
-                    <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                        <input type="hidden" name="name" value="Asus Rog6">
-                        <input type="hidden" name="price" value="88999">
-                        <input type="hidden" name="disscount" value="22%">
-                        <input type="hidden" name="photo" value="\Project_practies\images\Asus-ROG-Phone.webp">
-                        <input type="submit" value="Add to cart" class="add_cart">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="\Project_practies\images\Asus_Rog.jpg" class="card-img-top" alt="Asus Rog strix G17">
-                <div class="card-body">
-                    <h5 class="card-title">Asus Rog strix G17</h5>
-                    <p class="card-text">17.3-inch (43.94 cms) FHD 144Hz, AMD Ryzen 7 4800H, RTX 3050 Ti 4GB Graphics, Gaming Laptop (16GB/1TB SSD/Windows 11//Gray/2.4 kg), G713IE-HX040W From ₹84,989</p>
-                </div>
-                <div class="card-footer">
-                    <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                        <input type="hidden" name="name" value="Asus Rog Stix G17">
-                        <input type="hidden" name="price" value="84989">
-                        <input type="hidden" name="disscount" value="22%">
-                        <input type="hidden" name="photo" value="\Project_practies\images\Asus_Rog.jpg">
-                        <input type="submit" value="Add to cart" class="add_cart">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="\Project_practies\images\s21_ultra.jpg" class="card-img-top" alt="Samsung galaxy s21 ultra" height="400">
-                <div class="card-body">
-                    <h5 class="card-title">Samsung galaxy s21 ulta</h5>
-                    <p class="card-text">SAMSUNG Galaxy S21 Ultra (Phantom Black, 256 GB) (12 GB RAM)
-                        From ₹1,28,999
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                        <input type="hidden" name="name" value="Samsung s21 ulta">
-                        <input type="hidden" name="price" value="128999">
-                        <input type="hidden" name="disscount" value="22%">
-                        <input type="hidden" name="photo" value="\Project_practies\images\s21_ultra.jpg">
-                        <input type="submit" value="Add to cart" class="add_cart">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="\Project_practies\images\Samsung_galaxy_z-fold.jpg" class="card-img-top" alt="Samsung galaxy z-fold" height="400">
-                <div class="card-body">
-                    <h5 class="card-title">Samsung galaxy z-fold</h5>
-                    <p class="card-text">SAMSUNG Galaxy Z Fold3 5G (Phantom Green, 256 GB) (12 GB RAM)
-                        From ₹1,25,900
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <form action="\Project_practies\PHP\add_to_cart.php" method="post">
-                        <input type="hidden" name="name" value="Samsung galaxy z fold">
-                        <input type="hidden" name="price" value="125900">
-                        <input type="hidden" name="disscount" value="22%">
-                        <input type="hidden" name="photo" value="\Project_practies\images\Samsung_galaxy_z-fold.jpg">
-                        <input type="submit" value="Add to cart" class="add_cart">
-                    </form>
-                </div>
-            </div>
-        </div>
+        <?php
+        }
+        ?>
     </div>
 
 

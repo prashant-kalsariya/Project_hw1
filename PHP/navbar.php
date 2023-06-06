@@ -22,16 +22,14 @@ $imagepath = '\Project_practies\images\no_profile_photo.webp';
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="\Project_practies\PHP\main_index.php">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        more
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="main_cart_data.php">Cart</a></li>
+                        <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -41,19 +39,16 @@ $imagepath = '\Project_practies\images\no_profile_photo.webp';
                 
 
             </ul>
-            <form class="d-flex" id="search" name="nav_submit">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
-                <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
-            </form>
             <form class="d-flex">
-
+                
                 <a href="\Project_practies\PHP\main_cart_data.php" class="btn btn-primary position-relative">
                     Cart
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         <?php echo $arr_data['count'];  ?>
-
+                        
                     </span>
                 </a>
+                <a href="logout.php" class="btn btn-primary position-relative" style="margin-left:10px">Logout</a>
                 <a href="\Project_practies\PHP\profile.php" class="user_photo">
                     <img src="<?php if(isset($arr2['photo']) && !empty($arr2['photo'])){ echo $arr2['photo']; }else{ echo $imagepath; }?>" alt="Profile photo" height="40" style="border-radius:50% " ; title="Profile">
                 </a>

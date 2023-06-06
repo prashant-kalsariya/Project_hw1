@@ -8,10 +8,6 @@ if (isset($_POST['submit'])) {
     $price = mysqli_escape_string($con, $_POST['price']);
     $disscount = mysqli_escape_string($con, $_POST['disscount']);
     $description = mysqli_escape_string($con, $_POST['description']);
-    // $photo = mysqli_escape_string($con,$_POST['photo']);
-    // $update_query = "update profile set (name,gender,mobile,email) values ('$name','$gender','$mobile','$email') where id='$id'";
-    // $update_query = "update profile set name ='$name', gender = '$gender', mobile = '$mobile', email ='$email' where id='$id'";
-    // $uqery = mysqli_query($con, $update_query);
     include 'upload_item_image.php';
     $insert_query = "insert into items (name,price,disscount,description,photo) value ('$name','$price','$disscount','$description','$target_file')";
     $iquery = mysqli_query($con,$insert_query);
