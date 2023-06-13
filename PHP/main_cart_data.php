@@ -18,6 +18,9 @@
         include 'C:\xampp\htdocs\Project_practies\CSS\navbar.css';
 
         ?>
+        .tbl,tr,th,td{
+            border: 1px solid black;
+        }
     </style>
 
 
@@ -76,12 +79,27 @@
 
                     </div>
                 <?php
+                $price += $arr['price'] * $arr['quantity'];
                 }
                 ?>
             </main>
             <div class="left_item">
                 <h1>Summary of the cart</h1>
-
+                <table class="tbl">
+                    <tr>
+                        <th>Total price</th>
+                        <td><?php echo $price; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Total Disscount</th>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <th>Final price</th>
+                        <td><?php echo ($price - $price * 15/100); ?></td>
+                    </tr>
+                </table>
+                <a href="buy.php">Buy all</a>
             </div>
         </div>
     <?php
@@ -93,3 +111,4 @@
 </body>
 
 </html>
+
